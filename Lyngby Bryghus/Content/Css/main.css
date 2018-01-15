@@ -1,0 +1,71 @@
+﻿body {
+    background-color: #efdeb2;
+    /*font-family: 'Arista 2.0';*/
+}
+
+header {
+    max-height: 100px;
+    background-color: #d7a312;
+}
+
+h2 {
+    color: orange;
+}
+
+footer {
+    background-color: grey;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.footerimg {
+    max-height: 80px;
+    margin: 20px;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.beerpic {
+    max-height: 200px;
+    margin: 10px 5px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.43);
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+.brugerinfo {
+    margin: 10px 0 10px 0;
+}
+
+
+select:hover {
+    background-color: #d7a312;
+}
+
+
+.bestilborder {
+    border-radius: 5px;
+}
+
+.iconlinks {
+    margin: 0 20px 0 20px;
+    max-height: 150px;
+}
+
+#beerbutton {
+    width: 130px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url('../GFX/mute/foam-better.gif');
+    margin-bottom: 50px;
+}

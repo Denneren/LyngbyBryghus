@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "MoveFile";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>FlytFile</h2>
+<form method="post" action="/Home/MoveFile" enctype="multipart/form-data">
+    <label>Filnavn:</label>
+    <input type="text" name="fileName" />
+    <br />
+    <label>Move From:</label>
+    <input type="text" name="fileMoveFrom" />
+    <br />
+    <label>Move To:</label>
+    <input type="text" name="fileMoveTo" />
+    <br />
+    <button type="submit">Flyt Fil</button>
+</form>
+<hr />
+<p>@Html.Raw(ViewBag.Msg)</p>

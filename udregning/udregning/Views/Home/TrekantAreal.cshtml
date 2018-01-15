@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+
+<div class="box">
+    <h3>Trekant </h3>
+    <form method="post" action="/Home/TrekantAreal">
+        <input type="text" name="inputH" placeholder="Højde" />
+        <input type="text" name="inputG" placeholder="Grundlinje" />
+
+        <input type="submit" name="knap" value="Areal" />
+
+    </form>
+
+    <h3>Trekant Heron</h3>
+    <form method="post" action="/Home/TrekantHeron">
+        <input type="text" name="inputA" placeholder="A" />
+        <input type="text" name="inputB" placeholder="B" />
+        <input type="text" name="inputC" placeholder="C" />
+
+
+        <input type="submit" value="Areal" />
+
+    </form>
+
+    <p>
+        Resultat: @ViewBag.Resultat
+    </p>
+
+</div>

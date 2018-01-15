@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "CreateFile";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>CreateFile</h2>
+
+<form method="post" action="/Home/Createfile" enctype="multipart/form-data">
+    <label>Filnavn:</label>
+    <input type="text" name="fileName" />
+    <br />
+    <button type="submit">Opret fil</button>
+</form>
+<hr />
+<p>@ViewBag.Msg</p>
+

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Css/main.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="img-fluid" src="~/Content/GFX/lyngbybryghuslogo.png" style="padding:10px;max-height:80px;" />
+                </div>
+                <div class="col-sm-1">
+
+                </div>
+                <div class="col-sm-6">
+                    <div>
+                        <a href="/Home/OpretBruger/" style="text-decoration:none;color:grey;">Opret bruger</a>
+                        <input placeholder="Brugernavn" style="background-color:lightgrey;margin:25px 10px;" />
+                        <input placeholder="Password" style="background-color:lightgrey;" />
+                        <button type="submit" style="color:orange;">Log ind</button>
+                        <img class="img-fluid" src="~/Content/GFX/beerbox.png" style="opacity:0.5; max-width:50px;margin-bottom:16px;margin-left:100px;" />
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-2">
+
+                    @*<p style="margin:10px;color:#484646;">
+                            Lyngby Bryghus
+                            <br />
+                            Svinget 2
+                            <br />
+                            8570 Trustrup
+                            <br />
+                            Lyngby J
+                        </p>*@
+                </div>
+                <div class="col-sm-2">
+                    <a href="callto:42789605" style="text-decoration:none;color:black;"><img class="footerimg" src="~/Content/GFX/phone.png" /></a>
+
+
+                </div>
+                <div class="col-sm-2">
+                    <img class="footerimg" src="~/Content/GFX/envelope.png" />
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://goo.gl/maps/PB77NYuQwuC2" target="_blank">
+                        <img class="footerimg" src="~/Content/GFX/maps.png" />
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.facebook.com/LyngbyBryghus/" target="_blank">
+                        <img class="footerimg" src="~/Content/GFX/facebook.png" />
+                    </a>
+                </div>
+                <div class="col-sm-2"></div>
+                @*<marquee behavior="scroll" direction="left">
+                        <i>
+                            Lyngby Bryghus
+                            <br />
+                            Svinget 2
+                            <br />
+                            8570 Trustrup
+                            <br />
+                            Lyngby J
+
+                        </i>
+                        <i>
+                            <img class="footerimg" src="~/Content/GFX/facebook.png" />
+                        </i>
+
+                    </marquee>*@
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+
+</html>

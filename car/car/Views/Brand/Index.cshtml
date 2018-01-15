@@ -1,0 +1,20 @@
+﻿@using Repository.Models
+@model List<Brand>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Mærke</h2>
+<a class="btn btn-default" href="/Brand/AddNew">Tilføj</a>
+
+<ul>
+    @foreach (Brand row in Model)
+    {
+        <li>
+            <a href="/Home/Brand/@row.ID">Biler af mærket</a>
+            <b>@row.BrandName</b>
+            -<a href="/Brand/Delete/@row.ID">slet</a>
+        </li>
+    }
+</ul>

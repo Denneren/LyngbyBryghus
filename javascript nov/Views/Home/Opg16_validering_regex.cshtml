@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Opgave 15";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts
+
+    {
+
+}
+
+<h1>Validering #5 - E-MAIL - REGULAREXPRESSION</h1>
+<div id="opgaven">
+
+    <p>Forsøg at løse følgende:</p>
+
+    <ol>
+        <li>Når man klikker på send-knappen:</li>
+    </ol>
+
+    <ol start="2">
+        <li>HVIS inputfeltet er TOMT - ELLER HVIS value ikke overholder reglerne for en e-mail-adresse:</li>
+        <li>Skal der  i &lt;span&gt; stå en besked fx "Udfyld korrekt e-mail-adresse"</li>
+        <li>OG cursoren skal blinke i det tomme felt (fokus på feltet)</li>
+    </ol>
+
+    <ol start="5">
+        <li>HVIS alt er OK:</li>
+        <li>Skal der være et grønt flueben, et OK el.lign. i de to &lt;span&gt;</li>
+    </ol>
+
+    <div id="info">
+        <h4>Læs mere:</h4>
+        <p>Du får nok brug for at vide noget om <b>"Regular expressions (regex)"</b>, som man kan bruge til at <b>skabe et udtryk/mønster/pattern</b> for hvordan 'noget' skal være udtrykt/bygget op/indeholde/ikke indeholde osv. I opgaven her kan du bruge en regex til at beskrive, hvor mange tegn, hvilke tegn, hvad der SKAL være og IKKE SKAL være i e-mail-adressen.</p>
+        <p>Læs evt. her <a href="http://www.w3schools.com/js/js_regexp.asp">JavaScript Regular Expressions</a></p>
+        <p class="b">OBS! Når du har løst opgaven, kan du evt. gå tilbage til password-opgaven og løse den med en regular expression ... og evt. også alder, et postnummer osv.</p>
+    </div>
+</div>
+
+<h2>Udfyld venligst:</h2>
+
+<form>
+
+    <fieldset>
+        <legend>Kontakt</legend>
+
+        <div>
+            <label for="email">Din e-mail-adresse:</label>
+            <input type="text" name="email" id="email" value="" placeholder="E-mail-adresse" />
+            <span id="obsemail" class="alert"></span>
+        </div>
+        <input type="button" value="Send" />
+    </fieldset>
+
+</form>
+
+<div class="clear"></div>
+
+

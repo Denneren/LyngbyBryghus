@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "AddNew";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h1>tilføj bruger</h1>
+<form method="post" action="/CMS/User/AddNew">
+    <label>Brugernavn</label>
+    <br />
+    <input type="text" name="Username" />
+    <br />
+    <label>Kodeord</label>
+    <br />
+    <input type="password" name="Password" />
+    <br />
+    <select name="Role">
+        <option disabled selected>Vælg rolle</option>
+        <option value="1">Writer</option>
+        <option value="2">Editor</option>
+        <option value="3">Admin</option>
+    </select>
+    <br />
+    <button type="submit">Tilføj bruger</button>
+</form>
+<br />
+<a href="@Request.UrlReferrer.PathAndQuery">Tilbage</a>

@@ -1,0 +1,25 @@
+﻿@using Repository.Models
+@model List<Color>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Color</h2>
+<a class="btn btn-default" href="/Color/AddNew">Tilføj</a>
+
+<ul>
+    @foreach (Color farve in Model)
+    {
+        <li>
+            <a href="/Home/Color/@farve.ID">Biler af mærket</a>
+            <b>@farve.ColorName</b>
+            -<a href="/Color/Delete/@farve.ID ">slet</a>
+
+            -<a href="/Color/Edit/@farve.ID">rediger</a>
+        </li>
+    }
+
+
+</ul>
+

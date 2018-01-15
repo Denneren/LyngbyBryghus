@@ -1,0 +1,33 @@
+﻿@using TinyRepo.Models
+@model Articles
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h1>Rediger @Model.Headline</h1>
+<form method="post" action="/CMS/Article/Edit/" enctype="multipart/form-data">
+
+    <label>overskrift</label>
+    <br />
+    <input type="text" value="@Model.Headline" name="Headline" />
+    <br />
+    <label>Brødtekst</label>
+    <br />
+    <textarea name="Main">@Model.Main</textarea>
+    <br />
+    <label>Nyt billede</label>
+    <br />
+    <input type="file" name="Photo" />
+    <input type="hidden" value="@Model.ID" name="ID" />
+    <br />
+    <button type="submit">Opdater</button>
+</form>
+
+<hr />
+@if (Model.Image != null)
+{
+    <h2>Nuværende Billede</h2>
+    <img src="~/ArticleImages/@Model.Image" width="300" />
+}

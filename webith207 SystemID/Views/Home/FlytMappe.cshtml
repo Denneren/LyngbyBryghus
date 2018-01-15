@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "FlytMappe";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>FlytMappe</h2>
+<form method="post" action="/Home/FlytMappe" enctype="multipart/form-data">
+    <input type="text" name="mappeNavn" placeholder="Send fra" />
+    
+    <button type="submit">Flyt</button>
+
+</form>
+
+@ViewBag.Msg 

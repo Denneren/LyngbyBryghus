@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="~/css/main-columns.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container topbanner">
+        <img src="~/Images/logo.png" id="logo" />
+        <img class="img-responsive" src="~/Images/anyklubben nyt banner.png" style="border-radius:5px 5px 5px 5px; border:dimgrey 3px solid;" />
+
+    </div>
+
+    <nav class="container-fluid">
+        <div class="container">
+            <div>
+                <ul>
+                    <li>
+
+                        <a href="/Home/Index/">Forside</a>
+                    </li>
+                    <li>
+
+                        <a href="/Home/Nyheder/">Nyheder</a>
+                    </li>
+                    <li>
+                        <a href="#">Aktiviteter</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Klubbenshistorie/">Klubbens</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Info/">Info</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Bestyrelse/">Bestyrelse</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Åbningstider/">Åbningstider</a>
+                    </li>
+                    <li>
+                        <a href="#">Billeder</a>
+                    </li>
+                    <li>
+                        <a href="/Home/Kontakt/">Kontakt</a>
+                    </li>
+
+                </ul>
+                <div class="clearFix"></div>
+            </div>
+        </div>
+    </nav>
+
+    @*<div class="w3-bar w3-black navbar-main" style="padding:15px 0 15px 0;">
+            <div class="row">
+                <div class="container">
+                    <a href="#" class="w3-bar-item w3-button linkfont">Forside</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Nyheder</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Aktiviteter</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Klubbens Historie</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Info</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Bestyrelse</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Åbningstider</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Billeder</a>
+                    <a href="#" class="w3-bar-item w3-button linkfont">Kontakt</a>
+
+                </div>
+            </div>
+        </div>*@
+
+
+
+    <main class="container" @*style="border:solid 1px dimgrey; border-radius:5px 5px 5px 5px;"*@>
+        @RenderBody()
+    </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2 footerborder" style="margin-top:10px;">
+
+                    <p>
+                        <b>Åbningstider:</b><br />
+
+                        Mandag - Torsdag 9-16<br />
+                        Fredag - 9 -13
+                    </p>
+
+                </div>
+                <div class="col-2 footerborder" style="margin-top:10px;">
+
+                    <p>
+                        <b>Adresse:</b><br />
+
+                        Slyngborggade 21 1.sal<br />
+                        8900 Randers C
+                    </p>
+
+                </div>
+                <div class="col-2 footerborder" style="margin-top:10px;">
+                    <p>
+                        <b>Kontakt:</b><br />
+                        <a href="callto:86421551">86 42 15 51</a>
+                        <br />
+
+                        <a href="mailto:anyklubben@fiberflex.dk">Send Mail</a>
+
+                    </p>
+                </div>
+                <div class="col-2 footerborder">
+                    <p>
+                        kort
+                        <a href="https://goo.gl/maps/tK9UZC6V1gT2"></a>
+                    </p>
+                </div>
+
+                <div class="col-2 footerborder" style="margin-top:10px;">
+                    @*<p style="float:left;margin-right:10px;margin-left:140px;"><b>Besøg os på</b> </p>*@
+                    @*<div class="row">
+                            <p><b>Besøg os på</b></p>
+                        </div>*@
+                    <div class="row">
+                        <a href="
+                   https://www.facebook.com/anyklubben.aktivitetscenter
+                   " target="_blank">
+                            <img class="img-responsive" src="~/Images/facebook link.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

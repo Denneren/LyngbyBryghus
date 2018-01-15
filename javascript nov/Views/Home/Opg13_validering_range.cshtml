@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Opgave 12";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+
+    <script>
+        function knappen() {
+
+            var input = document.getElementById("postnr")
+
+
+            if (input.value.length == "") {
+                input.style.backgroundColor = "red";
+                document.getElementById("obspostnr").innerHTML = "Indtast gyldigt postnr";
+
+                document.getElementById("postnr").focus();
+                document.getElementById("postnr").select();
+            }
+
+            else if (input.value >= 1000 && input.value <= 9999) {
+                input.style.backgroundColor = "";
+                document.getElementById("obspostnr").innerHTML = "OK";
+            }
+            else {
+                input.style.backgroundColor = "red";
+                document.getElementById("obspostnr").innerHTML = "Indtast gyldigt postnr";
+
+            }
+
+
+        }
+
+    </script>
+
+}
+
+
+<h1>Validering #2 - POSTNUMMER - RANGE</h1>
+
+<div id="opgaven">
+
+    <p>Forsøg at løse følgende:</p>
+
+    <ol>
+        <li>Når man klikker på send-knappen:</li>
+    </ol>
+
+    <ol start="2">
+        <li>HVIS inputfeltet er <b>TOMT</b> - ELLER HVIS tallet er <b>MINDRE end 1000 eller STØRRE end 9999</b>:</li>
+        <li>Skal der i &lt;span&gt; være en rød tekst fx "Udfyld korrekt postnummer" i </li>
+        <li>OG cursoren skal blinke i feltet (fokus på feltet)</li>
+    </ol>
+
+    <ol start="6">
+        <li>
+            HVIS inputfeltet er udfyldt med et tal <b>mellem 1000 og 9999</b> (begge inkl.):
+        </li>
+        <li>Skal der være et grønt flueben, et OK el.lign. i &lt;span&gt;</li>
+    </ol>
+
+    <ol start="8">
+        <li>EKSTRA: Kan du evt. forhindre brugeren i at taste mere end 4 tegn i input-feltet?</li>
+    </ol>
+
+    <p id="help">
+        Få hjælp fx her: <br />
+        Måle på længden af en value/et input: <a href="http://www.w3schools.com/jsref/jsref_length_string.asp" target="_blank">JavaScript String length Property</a>.<br />
+        Fokus på et felt: <a href="http://www.w3schools.com/jsref/met_html_focus.asp" target="_blank">HTML DOM focus()</a>.<br />
+        Tjek om et tal er et hel-tal (ok) eller decimal-tal (ikke ok): <a href="http://stackoverflow.com/questions/2304052/check-if-a-number-has-a-decimal-place-is-a-whole-number" target="_blank">Check if a number has a decimal place...</a>
+    </p>
+
+</div>
+
+<h2>Udfyld venligst:</h2>
+
+<form>
+
+    <fieldset>
+
+        <legend>Personlige oplysninger</legend>
+
+        <div>
+            <label for="navn">Dit postnummer:</label>
+            <input type="text" name="postnr" id="postnr" value="" placeholder="Dit postnummer" />*
+            <span id="obspostnr" class="alert"></span>
+
+        </div>
+
+        <input type="button" value="Send" onclick="knappen()" />
+
+    </fieldset>
+
+</form>
+

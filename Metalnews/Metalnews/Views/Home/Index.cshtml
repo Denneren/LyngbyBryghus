@@ -1,0 +1,33 @@
+﻿@using MetalnewsRepo.Models
+@model List<Metalindhold>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="row text-center">
+        <br />
+        <a class="btn btn-default" href="/Home/AddNew/">Tilføj ny artikel</a>
+    </div>
+</div>
+<ul>
+    @foreach (Metalindhold Nyhed in Model)
+    {
+        <li>
+            <hr />
+            <h2 style="  text-shadow: 2px 2px #ff0000;">@Nyhed.Kunstner</h2>
+            <hr />
+            <h1 style="  text-shadow: 2px 2px #000000;"> @Nyhed.Overskrift</h1>
+            <br />
+
+            <p> @Nyhed.Dato</p>
+            <br />
+
+            <a class="btn btn-default" href="/Home/Details/@Nyhed.ID">LÆS ARTIKEL</a>   <a href="/Home/Delete/@Nyhed.ID">slet</a>
+
+        </li>
+    }
+
+
+</ul>
+

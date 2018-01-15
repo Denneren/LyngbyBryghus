@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+
+<div class="box">
+    <h3>Rektangel</h3>
+    <form method="post" action="/Home/Rektangel">
+        <input type="text" name="inputL" placeholder="Længde" />
+        <input type="text" name="inputB" placeholder="Bredde" />
+
+
+        <input type="submit" name="knap" value="Areal" />
+        <input type="submit" name="knap" value="Omkreds" />
+    </form>
+
+
+
+    <p>
+        Resultat: @ViewBag.Resultat
+    </p>
+</div>

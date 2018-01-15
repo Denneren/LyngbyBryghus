@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FLASH PRODUCTION</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Css/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/Css/Main News.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="borderbox">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="margin-top:60px;">
+                    @*<button class="link1 btn-danger">@Html.ActionLink("EGO", "Index", "Home")</button>*@
+                    <a class="link0 btn-danger " href="/Home/Index">EGO</a>
+                    <br />
+                    @*<button class="link1 btn-danger">@Html.ActionLink("PROJEKTER", "Projekter", "Home")</button>*@
+                    <a class="link1 btn-danger " href="/Home/Projekter">PROJEKTER</a>
+
+                    <br />
+                    @*<button class="link1 btn-danger">@Html.ActionLink("VISUEL", "Visuel", "Home")</button>*@
+                    <a class="link2 btn-danger" href="/Home/Visuel">VISUELT</a>
+                    <br />
+                    @*<button class="link1 btn-danger">@Html.ActionLink("MUSIK", "Musik", "Home")</button>*@
+                    <a class="link3 btn-danger" href="/Home/Musik">MUSIK</a>
+                    <br />
+                    <a class="link3 btn-danger" href="/Home/News">NEWS</a>
+
+                    <a href="mailto:dennerenpedersen@gmail.com">
+                        <img class="post" src="~/imagebanner/envelope.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+
+        <div class="col-sm-4">
+            <p>
+                Fuglevænget 17 2.Tv<br />
+                8500 Grenaa
+            </p>
+        </div>
+        <div class="col-sm-4">Telefon: <a class="mindre" href="tel:31311158"><br />31311158</a></div>
+        <div class="col-sm-4">
+            <a href="https://www.facebook.com/sickseedkontakt">
+                <img class="img-responsive footerimg center-block" src="~/footer img/facebook .png" />
+            </a>
+        </div>
+
+
+    </footer>
+</body>
+</html>
+

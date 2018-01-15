@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+
+<div class="box">
+    <h3>Prismer</h3>
+    <form method="post" action="/Home/PrismerRumfang">
+        <input type="text" name="input" placeholder="Højde" />
+        <input type="text" name="input2" placeholder=" Areal af grundfladen " />
+        <input type="submit" value="Rumfang" />
+    </form>
+    <p>
+        Resultat @ViewBag.Resultat:
+    </p>
+
+
+
+</div>

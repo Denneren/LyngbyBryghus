@@ -1,0 +1,20 @@
+﻿@using MetalnewsRepo.Models
+@model List<kunstnere>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="  text-shadow: 2px 2px #ff0000;">Bands</h2>
+
+<ul>
+    @foreach (kunstnere navn in Model)
+    {
+        <li>
+            @navn.Kunstner - <a href="/kunstnere/Delete/@navn.ID">slet</a>
+        </li>
+
+
+    }
+</ul>
+<a class="btn btn-default" href="/Kunstnere/AddNew/">Tilføj nyt Band</a>
+

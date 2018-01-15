@@ -1,0 +1,20 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("head", false)
+</head>
+<body>
+    <nav>
+        @{Html.RenderAction("GetMenu", "Home");}
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

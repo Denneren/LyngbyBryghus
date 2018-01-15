@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+
+
+
+<h3>Trekant Heron</h3>
+<form method="post" action="/Home/TrekantHeron">
+    <input type="text" name="inputA" placeholder="A" />
+    <input type="text" name="inputB" placeholder="B" />
+    <input type="text" name="inputC" placeholder="C" />
+
+    <input type="submit" value="Arealet er " />
+
+</form>
+
+
+
+<p>
+    Resultat: @ViewBag.Resultat
+</p>
+
+

@@ -1,0 +1,65 @@
+﻿@*CMS USERS*@
+@using TinyRepo.Models
+@model List<Users>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h2>Brugere Administration</h2>
+<a href="/CMS/User/AddNew">Tilføj bruger</a>
+<hr />
+
+<table>
+    <thead>
+        <tr>
+            <th>Brugernavn</th>
+            <th>Rolle</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (Users user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>@DisplayRole(user.Role.Value)</td>
+                <td><a href="/CMS/User/Edit/@user.ID">Rediger</a></td>
+
+                <td>
+                    @if ((int)Session["id"] != user.ID)
+                {
+                        <a href="/CMS/User/Delete/@user.ID">Slet</a>
+
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+@helper DisplayRole(int? role)
+{
+if (role == 1)
+{
+        <text>Writer</text>
+}
+else if (role == 2)
+{
+        <text>Editor</text>
+}
+else if (role == 3)
+{
+        <text>Admin</text>
+}
+
+else
+{
+        <text>Unknown</text>
+}
+
+}

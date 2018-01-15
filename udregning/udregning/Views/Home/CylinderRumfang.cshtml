@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+<div class="box">
+    <h3>Cylinder</h3>
+    <form method="post" action="/Home/CylinderRumfang">
+        <input type="text" name="inputR" placeholder="Radius" />
+        <input type="text" name="inputH" placeholder="Højde" />
+
+        <input type="submit" name="knap" value="Rumfang" />
+        <input type="submit" name="knap" value="Overflade" />
+    </form>
+
+
+
+    <p>
+        Resultat:@ViewBag.Resultat
+    </p>
+
+</div>

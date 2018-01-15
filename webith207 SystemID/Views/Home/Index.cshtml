@@ -1,0 +1,13 @@
+﻿@model FileInfo[]
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>Index</h2>
+<ul>
+    @foreach (FileInfo file in Model)
+    {
+        <li>@file.Name</li>
+    }
+</ul>

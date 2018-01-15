@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>Dropdown</h2>
+
+
+
+<form action="/Home/Index" method="post">
+    <select name="Værdier" onchange="this.form.submit()">
+        <option selected disabled>Væg en værdi</option>
+        <option value="Værdier1">Værdi1 </option>
+        <option value="Værdier2">Værdi2</option>
+        <option value="Værdier3">Værdi3</option>
+
+    </select>
+    <br><br>
+    <input type="submit" value="Send">
+</form>
+
+@ViewBag.msg
+
+
+
+
+

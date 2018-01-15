@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AddNew";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Tilføj ny farve</h2>
+<form method="post" action="/color/AddNew">
+    <label for="hest">indtast navnet på farven:</label>
+    <br />
+    <input type="text" name="ColorName" id="hest" />
+    <br />
+    <button class="btn btn-primary" type="submit">Gem farve</button>
+</form>
+

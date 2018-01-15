@@ -1,0 +1,25 @@
+﻿@using Repository.Models
+@model List<CarBrandColorHp>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach (CarBrandColorHp bil in Model)
+{
+
+    <div class="col-md-4">
+        <h2>@bil.BrandName @bil.CarModel</h2>
+        <p>
+            KM : @bil.KM  <br />
+            Farve:@bil.ColorName <br />
+            hestekræfter: @bil.HpName
+        </p>
+        <a class="btn btn-default" href=""></a>
+    </div>
+
+}
+
+

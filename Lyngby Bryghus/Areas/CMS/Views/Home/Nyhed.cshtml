@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Nyhed";
+    Layout = "~/Views/Shared/CMS_LayoutPage.cshtml";
+}
+
+<h2>Nyhed</h2>
+
+
+
+<form method="post" action="" enctype="multipart/form-data">
+
+    <br />
+    <input type="text" name="Headline" placeholder="Øl Titel" />
+    <br />
+    <br />
+    <textarea placeholder="Info om øl" name="Main"></textarea>
+    <br />
+
+
+    <br />
+    <select>
+        <option>Mjød</option>
+        <option>Lys Øl</option>
+        <option>Mørk Øl</option>
+        <option>Special Øl</option>
+        <option>Alle Øl</option>
+    </select>
+    <br />
+    <br />
+
+    <label>Billede</label>
+    <input type="file" name="Photo" />
+    <br />
+    <br />
+    <button type="submit">Tilføj Nyhed</button>
+</form>

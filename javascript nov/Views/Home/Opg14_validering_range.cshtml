@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Opgave 14";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+
+    <script>
+        function knappen() {
+
+            var input = document.getElementById("alder");
+
+            if (input.value.length == "") {
+                input.style.background = "red";
+                document.getElementById("obsalder").innerHTML = "Indtast gyldig alder";
+
+                document.getElementById("alder").focus();
+                document.getElementById("alder").select();
+            }
+            else if (input.value >= 18 && input.value <= 130) {
+                input.style.backgroundColor = "";
+                document.getElementById("obsalder").innerHTML = "OK";
+            }
+
+            else {
+                input.style.background = "red";
+                document.getElementById("obsalder").innerHTML = "Indtast gyldig alder";
+                document.getElementById("alder").focus();
+                document.getElementById("alder").select();
+
+            }
+
+        }
+
+    </script>
+
+}
+
+<h1>Validering #3 - ALDER - RANGE</h1>
+
+<div id="opgaven">
+    <p>Forsøg at løse følgende:</p>
+
+    <ol>
+        <li>Når man klikker på send-knappen:</li>
+    </ol>
+
+    <ol start="2">
+        <li>HVIS inputfeltet er tomt ELLER HVIS indtastningen er MINDRE end 18 eller større end 130:</li>
+        <li>Skal der stå en rød tekst fx "Udfyld korrekt alder" i &lt;span&gt; </li>
+        <li>OG cursoren skal blinke i feltet (fokus på feltet)</li>
+    </ol>
+
+    <ol>
+        <li>HVIS inputfeltet er UDFYLDT korrekt (alder 18-130)</li>
+        <li>Skal der være et grønt flueben, et OK el.lign. i &lt;span&gt;</li>
+    </ol>
+
+    <p id="help">
+        Se henvisninger i de tidligere opgaver - du får fx måske brug for noget if-else og compare/sammenligning (om noget er større end, lig med eller mindre end), focus mv.
+    </p>
+
+</div>
+
+
+<h2>Udfyld venligst:</h2>
+
+<form>
+
+    <h4>Du skal være mellem min. 18 og max. 130 år for at være med i klubben!</h4>
+
+    <fieldset>
+
+        <legend>Personlige oplysninger</legend>
+
+        <div>
+            <label for="alder">Din alder:</label>
+            <input type="text" name="alder" id="alder" value="" placeholder="Din alder" />
+            <span id="obsalder" class="alert"></span>
+        </div>
+        <input type="button" value="Send" onclick="knappen()" />
+
+    </fieldset>
+
+</form>

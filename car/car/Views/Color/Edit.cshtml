@@ -1,0 +1,17 @@
+﻿@using Repository.Models
+@model Color
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Edit</h2>
+<form method="post" action="/Color/Edit/">
+    <label for="hest">indtast navnet på farven:</label>
+    <br />
+    <input type="text" name="ColorName" id="hest" value="@Model.ColorName" />
+    <br />
+    <button class="btn btn-primary" type="submit">Opdater farver</button>
+    <input type="hidden" name="ID" value="@Model.ID" />
+</form>
+

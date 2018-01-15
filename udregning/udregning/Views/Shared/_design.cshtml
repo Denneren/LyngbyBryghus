@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="~/Img/logo.png" class="img-responsive imgcenter1" />
+            </div>
+        </div>
+        <div class="row">@RenderBody()</div>
+        <div class="storskærm">
+            <div class="container"></div>
+            <div class="row background">
+                <div class="col-sm-3">
+                    <a href="/Home/KegleRumfang/">
+                        <img style="margin:0 0 0px 200px;" src="~/Img/keglelogo.png" />
+                    </a>
+                    <span style="margin-left:210px;">Kegle</span>
+                    <br />
+                    <a href="/Home/PrismerRumfang/">
+                        <img style="margin:30px 0 0px 200px;" src="~/Img/prismelogo.png" />
+                    </a>
+                    <span style="margin-left:207px;">Prisme</span>
+                    <br />
+                    <a href="/Home/CylinderRumfang/">
+                        <img style="margin:30px 0 0px 190px;" src="~/Img/cylinderlogo.png" />
+                    </a>
+                    <span style="margin-left:207px;">Cylinder</span>
+                </div>
+
+                <div class="col-sm-6 background">
+                    <img class="imgcenter1" style="margin-top:50px;" src="~/Img/brain.gif" />
+
+                </div>
+
+                <div class="col-sm-3 background" style="margin-bottom:20px;">
+                    <a href="/Home/TrekantAreal/">
+                        <img src="~/Img/trekantlogo.png" />
+                    </a>
+                    <p style="margin-left:20px;">Trekant</p>
+                    @*<span style="margin:">Trekant</span>*@
+                    <br />
+                    <a href="/Home/Trapez/">
+                        <img style="width:120px;height:120px;" src="~/Img/trapezlogo.png" />
+                    </a>
+                    <p style="margin-left:20px;">Trapez</p>
+                    <br />
+                    <a href="/Home/Parallelogram/">
+                        <img style="width:100px;height:100px;" src="~/Img/Parallelogramlogo.png" />
+                    </a>
+                    <p style="margin-left:20px;">Parallelogram</p>
+
+                </div>
+
+
+
+            </div>
+            <div class="row background">
+                <div class="col-sm-offset-1 col-sm-2">
+                    <a href="/Home/UdregnKugleoverflade/">
+                        <img style="margin:0 0 0 80px;" src="~/Img/kuglelogo.png" />
+                    </a>
+                </div>
+                <div class="col-sm-2 background">
+                    <a href="/Home/PyramideRumfang/">
+                        <img class="img-responsive" style="width:90px;height:90px; margin:0 0 0 40px;" src="~/Img/pyramidelogo.png" />
+                    </a>
+                </div>
+                <div class="col-sm-2 background" style="margin-top:10px;margin-right:20px;">
+                    <a href="/Home/Kasse/">
+                        <img style="margin-right:30px;" src="~/Img/kasselogo.png" />
+                    </a>
+
+                </div>
+
+                <div class="col-sm-2 background" style="margin-top:10px;">
+                    <a href="/Home/Rektangel/">
+                        <img src="~/Img/rektangellogo.png" />
+                    </a>
+
+                </div>
+                <div class="col-sm-2 background">
+
+                    <a href="/Home/Cirkel/">
+                        <img style="width:92px;height:92px;" src="~/Img/cirkellogo.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="row background">
+                <span style="margin-left:220px;">Kugle</span>
+                <span style="margin-left:100px;">Pyramide</span>
+                <span style="margin-left:110px;">Kasse</span>
+                <span style="margin-left:150px;">Rektangel</span>
+                <span style="margin-left:130px;">Cirkel</span>
+
+            </div>
+        </div>
+
+
+        <div>
+
+        </div>
+    </div>
+    </div>
+    @*<div class="mobil">
+        <div>*@
+    @*<div class="container">
+        <div class="row">
+            <img class="img-responsive imgcenter1" src="~/Img/logo.png" />*@
+
+    @*<img class="imgcenter1" src="~/Img/brain.gif" />*@
+    @*</div>
+            <div class="row">
+                <div class=" col-sm-12">
+                    <a href="/Home/KegleRumfang/">
+                        <img style="margin-left:30px; margin-right:20px;" src="~/Img/keglelogo.png" />
+                    </a>
+
+
+                    <a href="/Home/PyramideRumfang/">
+                        <img src="~/Img/pyramidelogo.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:65px;margin-right:60px;">Kegle</span>
+                    <span>Pyramide</span>
+                </div>
+                <div class="row">
+                    <a href="/Home/CylinderRumfang/">
+                        <img style="margin-left:50PX;margin-right:30PX;" src="~/Img/cylinderlogo.png" />
+                    </a>
+                    <a href="/Home/PrismerRumfang/">
+                        <img src="~/Img/prismelogo.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:60px; margin-right:50px;">Cylinder</span>
+                    <span>Prisme</span>
+                </div>
+                <div class="row">
+                    <a href="/Home/UdregnKugleoverflade/">
+                        <img style="margin-left:40px;" src="~/Img/kuglelogo.png" />
+                    </a>
+                    <a href="/Home/Cirkel/">
+                        <img style="width:95px;height:95px;margin-left:20px;" src="~/Img/cirkellogo.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:70px;margin-right:75px;">Kugle</span>
+                    <span>Cirkel</span>
+                </div>
+
+                <div class="row">
+                    <a href="/Home/Parallelogram/">
+                        <img style="margin-left:30px;" src="~/Img/Parallelogramlogo.png" />
+                    </a>
+                    <a href="/Home/Trapez/">
+                        <img style="width:100px;" src="~/Img/trapezlogo.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:40px; margin-right:50px;">Parellelogram</span>
+                    <span>Trapez</span>
+                </div>
+
+                <div class="row">
+                    <a href="/Home/TrekantAreal/">
+                        <img style="margin-left:20px;width:120px;" src="~/Img/trekant copy.png" />
+                    </a>
+                    <a href="/Home/Kasse/">
+                        <img style="margin-top:20px;width:130px;" src="~/Img/mobile kasse.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:60px;margin-right:70px;">Trekant</span>
+                    <span>Kasse</span>
+                </div>
+                <div class="row">
+                    <a href="/Home/Rektangel/">
+                        <img style="margin-left:65px;" src="~/Img/rektangellogo.png" />
+                    </a>
+                </div>
+                <div class="row">
+                    <span style="margin-left:110px;">Rektangel</span>
+                </div>
+            </div>
+
+        </div>*@
+
+    <div class="mobil">
+
+        @*<div class="container">
+            <div class="row">
+                <img class="img-responsive imgcenter1" src="~/Img/logo.png" />
+            </div>*@
+        <div class="row centertext">
+            <hr />
+            <a href="/Home/KegleRumfang/">
+                <img class="img-responsive centerimg" src="~/Img/keglelogo.png" />
+            </a>
+            <span class="inner">Kegle</span>
+
+            <hr />
+            <a href="/Home/PrismerRumfang/">
+                <img class="img-responsive centerimg" src="~/Img/prismelogo.png" />
+            </a>
+            <span class="inner">Prisme</span>
+
+            <hr />
+            <a href="/Home/CylinderRumfang/">
+                <img class="img-responsive centerimg" src="~/Img/cylinderlogo.png" />
+            </a>
+            <span class="inner">Cylinder</span>
+
+            <hr />
+            <a href="/Home/PyramideRumfang/">
+                <img class="img-responsive centerimg" src="~/Img/pyramidelogo.png" />
+            </a>
+            <span class="inner">Pyramide</span>
+
+            <hr />
+            <a href="/Home/Udregnkugleoverflade/">
+                <img class="img-responsive centerimg" src="~/Img/kuglelogo.png" />
+            </a>
+            <span class="inner">Kugle</span>
+
+            <hr />
+            <a href="/Home/Cirkel/">
+                <img class="img-responsive centerimg" src="~/Img/cirkellogo.png" />
+            </a>
+            <span class="inner">Cirkel</span>
+
+            <hr />
+            <a href="/Home/TrekantAreal/">
+                <img class="img-responsive centerimg" src="~/Img/trekant copy.png" />
+            </a>
+            <span class="inner">Trekant</span>
+
+            <hr />
+            <a href="/Home/Kasse/">
+                <img class="img-responsive centerimg" src="~/Img/mobile kasse.png" />
+            </a>
+            <span class="inner">Kasse</span>
+
+            <hr />
+            <a href="/Home/Parallelogram/">
+                <img class="img-responsive centerimg" src="~/Img/Parallelogramlogo.png" />
+            </a>
+            <span class="inner">Parallelogram</span>
+
+            <hr />
+            <a href="/Home/Trapez/">
+                <img class="img-responsive centerimg" src="~/Img/trapezlogo.png" />
+            </a>
+            <span class="inner">Trapez</span>
+
+            <hr />
+            <a href="/Home/Rektangel/">
+                <img class="img-responsive centerimg" src="~/Img/rektangellogo.png" />
+            </a>
+            <span class="inner">Rektangel</span>
+
+            <hr />
+        </div>
+    </div>
+
+
+
+    <audio controls autoplay>
+        <source src="~/Pinky%20%20The%20Brain%20Theme%20(Instrumental).mp3" type="audio/mpeg" />
+    </audio>
+
+
+
+
+
+    @*<script>
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                //window.location.replace("/Home/Index_Mobile");
+            }
+        </script>*@
+</body>
+</html>

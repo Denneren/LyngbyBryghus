@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AddNew";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Tilføj nyt mærke</h2>
+<form method="post" action="/Brand/AddNew">
+    <label for="Brand>">Tilføj mærke</label>
+    <br />
+    <input type="text" name="BrandName" id="Brand" />
+    <br />
+    <button type="submit" class="btn btn-primary">Gem mærke</button>
+</form>
+

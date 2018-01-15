@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Lommeregner</h1>
+
+                <form action="/Home/Index/" method="post">
+                    <input type="number" step="any" name="talbox1" />
+                    <input type="number" step="any" name="talbox2" />
+                    <input type="submit" name="knapper" value="+" />
+                    <input type="submit" name="knapper" value="-" />
+                    <input type="submit" name="knapper" value="*" />
+                    <input type="submit" name="knapper" value="/" />
+
+                    @ViewBag.udregning
+                    <hr />
+                    @Html.Action("Hest", "dato")
+                    <br />
+                    @ViewBag.ja
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

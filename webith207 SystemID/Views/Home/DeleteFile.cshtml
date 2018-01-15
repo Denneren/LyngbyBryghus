@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "DeleteFile";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>DeleteFile</h2>
+<form method="post" action="/Home/DeleteFile" enctype="multipart/form-data">
+    <label>Filnavn:</label>
+    <input type="text" name="fileName" />
+    <br />
+    <button type="submit">Slet fil</button>
+</form>
+<hr />
+<p>@Html.Raw(ViewBag.Msg)</p>

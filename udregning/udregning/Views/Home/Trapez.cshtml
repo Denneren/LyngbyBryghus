@@ -1,0 +1,18 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+<div class="box">
+    <h3>Trapez</h3>
+    <form method="post" action="/Home/trapez">
+        <input type="text" name="inputA" placeholder="A" />
+        <input type="text" name="inputB" placeholder=" B " />
+        <input type="text" name="inputH" placeholder=" Højde " />
+        <input type="submit" value="Areal" />
+    </form>
+    <p>
+        Resultat @ViewBag.Resultat:
+    </p>
+
+</div>

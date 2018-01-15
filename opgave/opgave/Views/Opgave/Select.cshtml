@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Select";
+}
+
+<h2>Select</h2>
+<form method="post" action="/Opgave/Select" id="Hest">
+    <select name="DropDown">
+        <option selected disabled>Vælg en ting</option>
+        @Html.Raw(ViewBag.Options)
+    </select>
+
+    <div onclick="document.getElementById('Hest').submit()">Hest</div>
+
+</form> <hr /> @ViewBag.Msg

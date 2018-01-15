@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+<div class="box">
+    <h3>Cirkel</h3>
+    <form method="post" action="/Home/Cirkel">
+        <input type="text" name="inputR" placeholder="Radius" />
+        <input type="text" name="inputD" placeholder="Diameter" />
+
+
+        <input type="submit" name="knap" value="Areal" />
+        <input type="submit" name="knap" value="Omkreds" />
+    </form>
+
+
+
+    <p>
+        Resultat: @ViewBag.Resultat
+    </p>
+</div>

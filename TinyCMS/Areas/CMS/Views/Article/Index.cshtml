@@ -1,0 +1,47 @@
+﻿@*CMS ARTICLE INDEX*@
+@using TinyRepo.Models
+@model List<ArticleUser>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h1>Artikel Administration</h1>
+
+<a href="/CMS/Article/AddNew">Tilføj ny artikel</a>
+<hr />
+<table>
+    <thead>
+        <tr>
+            <th>Overskrift</th>
+            <th>Forfatter</th>
+            <th>Dato</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ArticleUser article in Model)
+        {
+            <tr>
+                <td>@article.Headline</td>
+                <td>@(article.Username != null ? article.Username : "Tidligere bruger")</td>
+                <td>@article.Date.ToShortDateString() : @article.Date.ToShortTimeString()</td>
+                <td>
+                    @if ((int)Session["role"] >= 2)
+                    {
+                        <a href="/CMS/Article/Edit/@article.ID">Rediger</a>
+                    }
+                </td>
+                <td>
+
+                    @if ((int)Session["role"] >= 2)
+                {
+                        <a href="/CMS/Article/Delete/@article.ID">Slet</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

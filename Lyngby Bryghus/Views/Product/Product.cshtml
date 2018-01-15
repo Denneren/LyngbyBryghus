@@ -1,0 +1,19 @@
+﻿@using LbRepo.Models;
+@model List<Product>
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Product</h2>
+@foreach (Product Øl in Model)
+{
+    <ul>
+
+        <li>@Øl.Price, @Øl.Name</li>
+
+
+
+    </ul>
+    <img scr="~/Content/@Øl.Image" />
+}

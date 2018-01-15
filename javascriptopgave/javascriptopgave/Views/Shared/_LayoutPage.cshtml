@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+
+
+    <title>@ViewBag.Title</title>
+
+    <script>
+
+        var overskrift = document.querySelector("#overskrift");
+
+        function skiftFarve() {
+            //document.getElementById("overskrift").style.color = "red";
+            //document.getElementById("overskrift").style.backgroundColor = "yellow";
+
+
+
+
+
+
+            document.querySelector("#overskrift").style.cssText = "color: green";
+            // Snak til enn ID
+
+            document.querySelector(".gedclass").style.cssText = "color: green";
+
+            //snak direkte til en class
+
+            var noget = document.querySelectorAll("hilite");
+
+            //for (var x of noget) {
+            //    x.style.cssText = "color:red; background-color:#000;";
+            //Direkte
+
+
+        }
+            //for (var i = 0; i < noget.length; i++) {
+            //    noget[i].style.cssText = "color:red; background-color:#000;";
+            //}
+            // start din styling fra et bestemt punkt
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1 id="overskrift">HER ER EN OVERSKRIFT</h1>
+    <input type="button" value="Klik her" onclick="skiftFarve()" />
+
+    <p class="hilite">GED GED GED </p>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

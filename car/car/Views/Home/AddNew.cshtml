@@ -1,0 +1,44 @@
+﻿@using Repository.Models
+@model CarOptions
+@{
+    ViewBag.Title = "AddNew";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>AddNew</h2>
+
+<form method="post" action="/Home/AddNew">
+    Bil model: <input type="text" name="CarModel" />
+    <br />
+    Kilometer: <input type="number" name="KM" />
+    <br />
+    Farve: @foreach (Color color in Model.Colors)
+    {
+        <options value="@color.ID">  - @color.ColorName</options>
+    }
+    <button type="submit" class="btn btn-primary">GEM</button>
+
+</form>
+
+<select name="BrandID">
+    @foreach (Brand brand in Model.Brands)
+    {
+        <option value="@brand.ID">@brand.BrandName</option>
+    }
+</select>
+
+
+
+
+<ul>
+    @foreach (Color color in Model.Colors)
+    {
+        <li>@color.ID  - @color.ColorName</li>
+    }
+</ul>
+<ul>
+    @foreach (Hp hp in Model.Hps)
+    {
+        <li>@hp.ID - Hp.HpName</li>
+    }
+</ul>

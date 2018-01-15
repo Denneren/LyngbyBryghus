@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/stylesheet/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    @*<h1>Indtast dit navn</h1>
+        <form method="post" action="/Home/Index">
+            <input type="text" name="Navn" />
+
+            <br />
+            <input type="text" name="Efternavn" />
+            <br />
+            <input type="submit" value="Send" />
+        </form>*@
+    <h1>Vælg Billede</h1>
+
+    <form method="post" action="/Home/Index">
+        <input type="submit" name="img" value="1" />
+        <input type="submit" name="img" value="2" />
+        <input type="submit" name="img" value="3" />
+        <input type="submit" name="img" value="4" />
+    </form>
+</body>
+</html>

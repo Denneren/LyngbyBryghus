@@ -1,0 +1,158 @@
+﻿@using FlashProduction.ViewModels
+@model ForsideModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+
+    <div class="row">
+        <img class="img-responsive bannerlogo center-block" src="~/imagebanner/top1.png" />
+        <h2 style="text-align:center;">
+            <img class="img-responsive center-block" src="~/icons/ego.png" />
+        </h2>
+
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3">
+            <img class="img-responsive" src="~/imagebanner/1a.png" style="border-radius:5px 5px 5px 5px; border-bottom:solid 1px grey;border-right:solid 3px dimgrey;border-bottom:solid 3px dimgrey;" />
+            <p style="text-align:center;">Familien Pedersen</p>
+        </div>
+        <div class="col-sm-3 indoldarticle" style="margin-right:5px;">
+            <article>
+                <p>
+
+                    @foreach (var item in Model.egoTables)
+                    {
+                        <br />
+                        <b>@item.Overskrift &nbsp;</b>@item.Tekst
+                        <br />
+                    }
+
+
+
+                    @*<br />
+                        <b>Jeg er</b> en Århusiansk mand på 34, som er bo sat i Grenaa sammen med min kæreste Lonny og datter Vega.
+                        <br />
+                        <br />
+                        <b>Til dagligt</b> studere jeg  Web Integrator udannelsen på VidenDjus og efterfølgende står den på 3d college samme sted.
+                        Jeg er kreativ af sind, alt lige fra det grafiske til musik.
+                        <br />
+                        <br />
+                        <b>Jeg har tidligere</b> drevet min egen virksomheden i Århus C.
+                        En TattooShop med et hold på 6 tattovørere.
+                        Det har givet mig rig erfaring indenfor - kundeservice, markedsføring, teambuilding, ansvar, regnskaber, timing og lagerbeholdningen.
+                        Mange af erfaringerne gjorde jeg mig tidligere, da jeg stod som butikchef for kæden EB GAMES, der idag hedder Game Stop.
+                        <br /><br />
+                        <b>Jeg er typen</b> der altid færdiggør hvad jeg starter og altid er resultat orinteret.
+                        Mit drive gør, at jeg gerne overgå mig selv, fra gang til gang.
+
+                        <br />*@
+                </p>
+
+
+            </article>
+        </div>
+        <div class="col-sm-3 indoldarticle" style="margin-left:5px;">
+            <article>
+                <p>
+                    @foreach (var item in Model.egoTables2)
+
+                    {
+                        <br />
+                        <b>@item.Overskrift </b>  @item.Tekst
+                        <br />
+                    }
+                    @*<br />
+                        <b>  I min fritid</b>
+                        spiller jeg musik.
+                        Det har jeg gjort i snart 15 år, med gruppen Sickseed.
+                        Jeg har senere hen også brugt lidt energi på et solo projekt ved navn Norstrøm
+
+                        <br />
+                        <br />*@
+                    <img class="img-responsive" style="border-radius:5px 5px 5px 5px;" src="~/imagebanner/10462663_10152451460415675_3673172234329050515_n.jpg" />
+                </p>
+            </article>
+        </div>
+        <div class="col-sm-3"></div>
+
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3" style="background-color:lightgray;border-bottom:solid 1px grey;border-radius:5px 5px 5px 5px;margin-right:5px;">
+            <article>
+                <table style="width:100%">
+                    <tr>
+                        <th><h2 style="text-align:center;"><hr />Programmer<hr /></h2></th>
+
+
+                </table>
+
+
+                <br />
+                <ul>
+
+                    @foreach (var item in Model.proTabels)
+                    {
+                        <li>@item.Programs</li>
+                    }
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere</li>
+                    <li>Visuel Studio</li>
+                    <li>GarageBand</li>
+                    <li></li>
+
+                </ul>
+                <table style="width:100%">
+                    <tr>
+
+                    <tr>
+                        <th><h2 style="text-align:center;"><hr />Sprog<hr /></h2></th>
+
+
+                </table>
+                <br />
+                <ul>
+                    <li>HTML / CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>C#</li>
+                    <li>MVC</li>
+                    <li>SQL</li>
+                    <li>BOOTSTRAP</li>
+
+                </ul>
+            </article>
+        </div>
+        <div class="col-sm-3" style="background-color:lightgray;border-bottom:solid 1px grey;border-radius:5px 5px 5px 5px;margin-left:5px;">
+            <article>
+                <table style="width:100%">
+                    <tr>
+                        <th><h2 style="text-align:center;"><hr />Skills<hr /></hrZ></h2></th>
+
+
+                </table>
+                <br />
+                <ul>
+                    <li>Billede Redigering</li>
+                    <li>Video redigering</li>
+                    <li>Programering</li>
+                    <li>Foto</li>
+                    <li>Kamera Føring</li>
+                    <li>Frihåndstegning</li>
+                    <li></li>
+
+                </ul>
+
+            </article>
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+    </div>
+</div>
+<br />

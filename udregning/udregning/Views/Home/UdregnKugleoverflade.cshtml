@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_design.cshtml";
+}
+
+
+<div class="box">
+    <h3>Kugle</h3>
+    <h4>Overflade</h4>
+    <form method="post" action="/Home/UdregnKugleoverflade">
+        <input type="text" name="input" />
+        <input type="submit" name="knap" value="Radius" />
+        <input type="submit" name="knap" value="Diameter" />
+    </form>
+    @*<p>
+            Resultat: @ViewBag.Resultat
+        </p>*@
+
+
+</div>
+<div class="box">
+    <h4>Rumfang</h4>
+    <form method="post" action="/Home/UdregnKugleRumfang">
+        <input type="text" name="input" />
+
+        <input type="submit" name="knap" value="Radius" />
+        <input type="submit" name="knap" value="Diameter" />
+    </form>
+    <p>
+        Resultat: @ViewBag.Resultat
+    </p>
+
+</div>

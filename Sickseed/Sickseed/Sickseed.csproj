@@ -1,0 +1,275 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABDA0FB0-C059-457C-B82E-5F96C6688107}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sickseed</RootNamespace>
+    <AssemblyName>Sickseed</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact.html" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="hjemmeside1\1.png" />
+    <Content Include="hjemmeside1\10.jpg" />
+    <Content Include="hjemmeside1\11.jpg" />
+    <Content Include="hjemmeside1\12.jpg" />
+    <Content Include="hjemmeside1\13.jpg" />
+    <Content Include="hjemmeside1\14.jpg" />
+    <Content Include="hjemmeside1\15.jpg" />
+    <Content Include="hjemmeside1\16.jpg" />
+    <Content Include="hjemmeside1\17.jpg" />
+    <Content Include="hjemmeside1\18.jpg" />
+    <Content Include="hjemmeside1\19.jpg" />
+    <Content Include="hjemmeside1\2.jpg" />
+    <Content Include="hjemmeside1\20.jpg" />
+    <Content Include="hjemmeside1\21.jpg" />
+    <Content Include="hjemmeside1\22.jpg" />
+    <Content Include="hjemmeside1\23.jpg" />
+    <Content Include="hjemmeside1\24.jpg" />
+    <Content Include="hjemmeside1\25.jpg" />
+    <Content Include="hjemmeside1\26.jpg" />
+    <Content Include="hjemmeside1\27.jpg" />
+    <Content Include="hjemmeside1\28.jpg" />
+    <Content Include="hjemmeside1\29.jpg" />
+    <Content Include="hjemmeside1\3.jpg" />
+    <Content Include="hjemmeside1\30.jpg" />
+    <Content Include="hjemmeside1\31.jpg" />
+    <Content Include="hjemmeside1\32.jpg" />
+    <Content Include="hjemmeside1\33.jpg" />
+    <Content Include="hjemmeside1\34.jpg" />
+    <Content Include="hjemmeside1\35.jpg" />
+    <Content Include="hjemmeside1\4.jpg" />
+    <Content Include="hjemmeside1\5.jpg" />
+    <Content Include="hjemmeside1\6.jpg" />
+    <Content Include="hjemmeside1\7.jpg" />
+    <Content Include="hjemmeside1\8.jpg" />
+    <Content Include="hjemmeside1\9.jpg" />
+    <Content Include="img070215-1191340.gif" />
+    <Content Include="Img\contact.png" />
+    <Content Include="Img\0HAEdon83Y.gif" />
+    <Content Include="Img\21106788_10155623068223972_671538926573668630_n.jpg" />
+    <Content Include="Img\21427420_10155658738243972_7599952886718472236_o.jpg" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Img\5.gif" />
+    <Content Include="Img\71957_453091228971_6685263_n.jpg" />
+    <Content Include="Img\ape skull.gif" />
+    <Content Include="Img\blood-cell-gif.gif" />
+    <Content Include="Img\blood-drip-23.gif" />
+    <Content Include="Img\cover.png" />
+    <Content Include="Img\crazy skull.gif" />
+    <Content Include="Img\facebook-splatter-1.png" />
+    <Content Include="Img\FullSizeRender %288%29.jpg" />
+    <Content Include="Img\FullSizeRender %289%29.jpg" />
+    <Content Include="Img\giphy %2815%29.gif" />
+    <Content Include="Img\giphy %2826%29.gif" />
+    <Content Include="Img\giphy.gif" />
+    <Content Include="Img\hqdefault.jpg" />
+    <Content Include="Img\link.png" />
+    <Content Include="Img\logo726235755551460767059.gif" />
+    <Content Include="Img\mileena vs warboy.png" />
+    <Content Include="Img\penetrate.png" />
+    <Content Include="Img\saint.jpg" />
+    <Content Include="Img\sickseed cover.png" />
+    <Content Include="Img\sickseed demo1.png" />
+    <Content Include="Img\sickseed kom nu.png" />
+    <Content Include="Img\sickseed.png" />
+    <Content Include="Img\sickseed1.png" />
+    <Content Include="Img\skulldddssdd.gif" />
+    <Content Include="Img\the_raven_by_machiavellicro-d5ls41u.jpg" />
+    <Content Include="Index.html" />
+    <Content Include="jquery-1.10.2.js" />
+    <Content Include="jquery.min.js" />
+    <Content Include="lightbox.js" />
+    <Content Include="lightbox.min.css" />
+    <Content Include="Main.css" />
+    <Content Include="Merch.html" />
+    <Content Include="Music.html" />
+    <Content Include="Pictures.html" />
+    <Content Include="Shows.html" />
+    <Content Include="Sickseed - Mileena [MM-Master Wave].wav" />
+    <Content Include="Sickseed - Warboy [MM-Master Wave] %281%29.wav" />
+    <Content Include="sickseed bbd\01 Beauty Before Death.m4a" />
+    <Content Include="sickseed bbd\02 Inside I Die.m4a" />
+    <Content Include="sickseed bbd\03 Dining With Zombies.m4a" />
+    <Content Include="sickseed bbd\04 Possesed By You.m4a" />
+    <Content Include="sickseed bbd\05 See You Again.m4a" />
+    <Content Include="sickseed bbd\06 Fire Walk With Me.m4a" />
+    <Content Include="sickseed bbd\07 Low.m4a" />
+    <Content Include="sickseed bbd\08 Don%27t Listen To Them.m4a" />
+    <Content Include="sickseed bbd\09 Brothers Avenue.m4a" />
+    <Content Include="sickseed bbd\10 Everything Falls.m4a" />
+    <Content Include="Sickseed demo\01 All that%27s mine.mp3" />
+    <Content Include="Sickseed demo\02 Searching.mp3" />
+    <Content Include="Sickseed demo\03 Born.mp3" />
+    <Content Include="Sickseed demo\04 deadline.mp3" />
+    <Content Include="Sickseed demo\05 take it back.mp3" />
+    <Content Include="Sickseed demo\17-searching.mp3" />
+    <Content Include="sickseed pre\01 Beauty before death.wav" />
+    <Content Include="sickseed pre\02 Everything Falls.wav" />
+    <Content Include="sickseed pre\03 inside i die.wav" />
+    <Content Include="TediousPowerfulAmericansaddlebred-max-1mb.gif" />
+    <Content Include="video.html" />
+    <Content Include="video\slave.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="GOTHIC.TTF" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65298</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65298/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

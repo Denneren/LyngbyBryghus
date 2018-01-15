@@ -1,0 +1,31 @@
+﻿@using TinyRepo.Models
+@model Users
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h1>rediger bruger @Model.Username</h1>
+
+<form method="post" action="/CMS/User/Edit">
+    <label>Brugernavn</label>
+    <br />
+    <input type="text" name="Username" value="@Model.Username" />
+    <br />
+    <label>Kodeord</label>
+    <br />
+    <input type="password" name="password" value="@Model.Password" />
+    <br />
+
+
+    <select name="Role" @(Model.ID == (int)Session["id"] ? "disabled" : null)>
+
+        <option value="1" @(Model.Role == 1 ? "selected" : null)>Writer</option>
+        <option value="2" @(Model.Role == 2 ? "selected" : null)>Editor</option>
+        <option value="3" @(Model.Role == 3 ? "selected" : null)>Admin</option>
+
+    </select>
+    <br />
+    <button type="submit">Opdater bruger</button>
+    <input type="hidden" value="@Model.ID" name="ID" />
+</form>

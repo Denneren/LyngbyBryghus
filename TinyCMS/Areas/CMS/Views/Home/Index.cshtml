@@ -1,0 +1,14 @@
+﻿@*CMS INDEX*@
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_CmsLayout.cshtml";
+}
+
+<h2>CMS Index</h2>
+<p>Velkommen til systemet</p>
+<a href="/CMS/Article/">Administrer artikler </a>
+<br />
+@if ((int)Session["role"] > 2)
+{
+    <a href="/CMS/User/">Administrer brugere </a>
+}

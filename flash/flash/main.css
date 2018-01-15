@@ -1,0 +1,91 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    /*background-image: url('grafik/flash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;*/
+}
+
+.link0 {
+    position: absolute;
+    z-index: 2;
+    top: -300px;
+    left: 30px;
+}
+
+.link1 {
+    position: absolute;
+    z-index: 2;
+    top: -250px;
+    left: 30px;
+}
+
+.link2 {
+    position: absolute;
+    z-index: 2;
+    top: -200px;
+    left: 30px;
+}
+
+.link3 {
+    position: absolute;
+    z-index: 2;
+    top: -150px;
+    left: 30px;
+}
+
+.link4 {
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 30px;
+}
+
+.link5 {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 500px;
+}
+
+.post {
+    position: absolute;
+    z-index: 2;
+    top: -150px;
+    left: 1110px;
+    width: 50px;
+}
+
+
+
+.skills {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+}
+
+img {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a {
+    font-size: 30px;
+}
+
+.link1:hover {
+}
+
+.btn-danger {
+    background-color: darkred
+}
+
+h1 {
+    text-align: center;
+}
+
+#mail:hover {
+    background-image: url('grafik/envolope red.jpg');
+    width: 50px;
+}

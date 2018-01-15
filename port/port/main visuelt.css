@@ -1,0 +1,123 @@
+﻿html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('imagebanner/visuelt-pic.gif');
+    background-position: center top;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: contain;
+    background-color: #999;
+}
+
+a {
+    font-size: 30px;
+}
+
+.btn-danger {
+    background-color: darkred
+}
+
+.indhold {
+    background-color: whitesmoke;
+}
+
+.indoldarticle {
+    background-color: lightgrey;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    /*bottom: 0;*/
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+a {
+    /*font-size: 12px;*/
+}
+
+.mindre {
+    font-size: 12px;
+}
+
+.footerimg {
+    /*width: 45px;*/
+    height: 40px;
+}
+
+.post {
+    float: right;
+    width: 50px;
+}
+
+.borderbox {
+    height: 350px;
+    border: solid 3px black;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.bannerlogo {
+    width: 800px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.gallery {
+    width: 640px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+    .gallery > div {
+        position: relative;
+        float: left;
+        padding: 5px;
+    }
+
+        .gallery > div > img {
+            display: block;
+            width: 200px;
+            transition: .1s transform;
+            transform: translateZ(0); /* hack */
+        }
+
+        .gallery > div:hover {
+            z-index: 1;
+        }
+
+            .gallery > div:hover > img {
+                transform: scale(1.7,1.7);
+                transition: .3s transform;
+            }
+
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.linkbnt {
+    z-index: 2;
+}

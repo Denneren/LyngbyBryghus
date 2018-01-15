@@ -1,0 +1,310 @@
+﻿
+
+
+body {
+    background-image: url('../Images/back.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+}
+
+    .row:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1 {
+    width: 8.333333333333333%;
+}
+
+.col-2 {
+    width: 16.66666666666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333333333%;
+}
+
+.col-5 {
+    width: 41.66666666666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33333333333333%;
+}
+
+.col-8 {
+    width: 66.66666666666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33333333333333%;
+}
+
+.col-11 {
+    width: 91.66666666666666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.container, .container-fluid {
+}
+
+.container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+}
+
+.visible-mobile {
+    display: none;
+}
+
+.clearFix {
+    clear: both;
+}
+/* Når skærmen er mindre end 768px TABLETS */
+@media only screen and (max-width:768px) {
+    .col-m-1 {
+        width: 8.333333333333333%;
+    }
+
+    .col-m-2 {
+        width: 16.66666666666667%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33333333333333%;
+    }
+
+    .col-m-5 {
+        width: 41.66666666666667%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33333333333333%;
+    }
+
+    .col-m-8 {
+        width: 66.66666666666666%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33333333333333%;
+    }
+
+    .col-m-11 {
+        width: 91.66666666666666%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Når skærmen er mindre end 480px MOBILE */
+@media only screen and (max-width:480px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .visible-mobile {
+        display: block;
+    }
+}
+
+.topbanner {
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.navbar-main {
+    background-color: lightgray;
+    margin-bottom: 10px;
+    border: solid 1px dimgrey;
+}
+
+.linkfont {
+    font-size: 15px;
+    color: #6e6e6e;
+}
+
+nav {
+    height: 60px;
+    background-color: lightgray;
+    border: 1px solid dimgray;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+}
+
+    nav > div > div:first-child {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    nav > div div ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav > div div li {
+        width: 11%;
+        float: left;
+        list-style-type: none;
+    }
+
+        nav > div div li a {
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 15px;
+            color: #6e6e6e;
+            font-family: Century Gothic;
+        }
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+footer {
+    position: relative;
+    /*position: fixed;*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /*border: 1px black solid;*/
+    background-color: #929292;
+    max-height: 120px;
+}
+
+.footerborder {
+    /*border-right: 3px black solid;*/
+    text-align: center;
+    display: inline-block;
+}
+
+#logo {
+    top: 20px;
+    position: absolute;
+    left: -15%;
+    max-width: 150px;
+}
+
+.articleback {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.borderlines {
+    border-left: 3px solid dimgrey;
+    border-right: 3px solid dimgrey;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radius {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.bfarve1 {
+    color: cornflowerblue;
+}
+
+.centertext {
+    text-align: center;
+}
+
+main {
+    min-height: 400px;
+    padding-bottom: 20px;
+}
+
+.footermargin {
+    margin-top: 10px;
+}
+
+h1 {
+    color: grey;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+h2 {
+    color: grey;
+    text-shadow: 1px 1px 1px #000000;
+}

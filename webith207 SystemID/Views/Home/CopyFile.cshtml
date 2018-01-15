@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "CopyFile";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+
+<h2>CopyFile</h2>
+<form method="post" action="/Home/CopyFile" enctype="multipart/form-data">
+    <label>Filnavn:</label>
+    <input type="text" name="fileName" />
+    <br />
+    <label>Move From:</label>
+    <input type="text" name="fileCopyFrom" />
+    <br />
+    <label>Move To:</label>
+    <input type="text" name="fileCopyTo" />
+    <br />
+    <button type="submit">Kopier Fil</button>
+</form>
+<hr />
+<p>@Html.Raw(ViewBag.Msg)</p>

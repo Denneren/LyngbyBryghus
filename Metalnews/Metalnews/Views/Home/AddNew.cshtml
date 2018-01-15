@@ -1,0 +1,26 @@
+﻿@using MetalnewsRepo.Models
+@model Metaloptions
+@{
+    ViewBag.Title = "addnew";
+}
+
+<h2 style="  text-shadow: 2px 2px #ff0000;">Tilføj ny artikel</h2>
+<form method="post" action="/Home/AddNew/">
+    <label for="overskrift">Overskrift</label>
+    <br />
+    <input type="text" name="Overskrift" id="overskrift" />
+    <br />
+    <label for="Indhold">Sladder</label>
+    <br />
+    <textarea type="text" name="Indhold" id="Indhold"></textarea>
+    <br />
+    <input type="date" name="Dato" />
+    <select name="KunstnerID">
+        <option disabled selected>Vælg Band</option>
+        @foreach (kunstnere band in Model.Artist)
+        {
+            <option value="@band.ID">@band.Kunstner</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-primary">Gem Artikel</button>
+</form>

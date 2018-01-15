@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metalnews", "Metalnews\Metalnews.csproj", "{DEB30F3B-A822-42C0-B290-D950F80B386B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetalnewsRepo", "MetalnewsRepo\MetalnewsRepo.csproj", "{CF056496-BCA6-4833-AB38-AB5C8DC5825B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEB30F3B-A822-42C0-B290-D950F80B386B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB30F3B-A822-42C0-B290-D950F80B386B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB30F3B-A822-42C0-B290-D950F80B386B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB30F3B-A822-42C0-B290-D950F80B386B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF056496-BCA6-4833-AB38-AB5C8DC5825B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF056496-BCA6-4833-AB38-AB5C8DC5825B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF056496-BCA6-4833-AB38-AB5C8DC5825B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF056496-BCA6-4833-AB38-AB5C8DC5825B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA99394F-D14A-479D-8F34-3576B1D6BC7D}
+	EndGlobalSection
+EndGlobal

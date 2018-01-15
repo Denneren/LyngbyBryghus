@@ -1,0 +1,5 @@
+﻿@model FileInfo[]
+@foreach (var file in Model)
+{
+    <a href="/Home/@file.Name.Replace(file.Extension, "")">@file.Name.Replace(file.Extension, "")</a>
+}

@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Opgave 10";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 id="overskrift">Flyt image</h1>
+
+<div id="opgaven">
+
+    <h4>Opgaven</h4>
+
+    <ol>
+        <li>Når man klikker på en af image-pilene:</li>
+        <li>Skal pacman flyttes 10 pixels i den retning som pilen peger</li>
+    </ol>
+
+    <ol>
+        <li>Når man klikker på en tastatur-pil</li>
+        <li>Skal pacman flyttes 10 pixels i den retning som pilen peger</li>
+    </ol>
+
+    <!--<p class="i">Kan du mon udvide  at gøre sådan at pacman'en fortsætter med at flytte sig i den samme retning - indtil man klikker på en anden pil (eller den rammer browservinduets "ramme")</p>-->
+
+    <p id="help">
+        Få hjælp fx her:
+        <a href="http://www.w3schools.com/jsref/prop_style_top.asp" target="_blank">Noget om style</a> og <a href="http://stackoverflow.com/questions/905222/enter-key-press-event-in-javascript#answers" target="_blank">"Enter key press event in JavaScript"</a> og <a href="http://keycode.info/" target="_blank">koderne til pile-tasterne </a>
+    </p>
+
+</div>
+
+<div id="board">
+    <img src="/Img/pacman.png" alt="pacman" id="pacman" />
+</div>
+
+<div id="control">
+    <img id="venstre" src="/Img/venstre.png" alt="Venstre" />
+    <img id="op" src="/Img/op.png" alt="Op" />
+    <img id="ned" src="/Img/ned.png" alt="Ned" />
+    <img id="hoejre" src="/Img/hoejre.png" alt="Højre" /
+</div>

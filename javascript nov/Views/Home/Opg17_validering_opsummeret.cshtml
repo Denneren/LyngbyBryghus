@@ -1,0 +1,80 @@
+﻿
+        <h1>Validering #6 - DET HELE ... SAMLET ... SVÆR!!!</h1>
+
+        <div id="opgaven">
+
+            <p>Forsøg at løse opgaven, så al validering er samlet med validering på alle felter:</p>
+
+            <ol>
+                <li>HVIS der er fejl eller mangler i et eller flere felter:</li>
+                <li>Skal der stå en rød fejlbesked i de &lt;span&gt;, hvor der er fejl/mangler</li>
+            </ol>
+
+            <ol>
+                <li>HVIS formularen er udfyldt korrekt (intet mangler og alle tidligere regler er overholdt):</li>
+                <li>Skal der være et grønt flueben, et OK el.lign. i alle &lt;span&gt;</li>
+                <li>OG sørg for en alert-box, som giver besked om, at alt er OK - man er nu oprettet som medlem el.lign.</li>
+            </ol>
+
+        </div>
+
+        <h2>Udfyld venligst:</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Personlige oplysninger</legend>
+
+                <!-- NAVN -->
+                <label for="fornavn">Dit navn</label>
+                <input type="text" name="fornavn" id="navn" value="" placeholder="Dit navn" title="Indtast dit navn" />
+                <span id="obsnavn"></span>
+                <br />
+
+                <!-- ALDER -->
+                <label for="alder">Alder (min. 18 år og maks. 130 år)</label>
+                <input type="text" name="alder" id="alder" value="" placeholder="Din alder" />
+                <span id="obsalder"></span>
+                <br />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Kontaktoplysninger</legend>
+
+                <!-- POSTNR -->
+                <label for="postnr">Postnummer (kun danske)</label>
+                <input type="text" name="postnr" id="postnr" value="" placeholder="Dit postnummer" />
+                <span id="obspostnr"></span>
+                <br />
+
+                <!-- EMAIL -->
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" value="" placeholder="Din e-mail-adresse" />
+                <span id="obsemail"></span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Sikkerhed</legend>
+                <br />
+
+                <!-- PASSWORD 1 -->
+                <label for="pw">Password (min. 6 tegn)</label>
+                <input type="text" name="pw" id="pw1" value="" placeholder="Skriv et password" />
+                <span id="obspw1"></span>
+                <br />
+
+               <!-- PASSWORD 2 -->
+               <label for="pw">Gentag password</label>
+                <input type="text" name="pw2" id="pw2" value="" placeholder="Gentag password" />
+                <span id="obspw2"></span>
+
+            </fieldset>
+
+            <input type="button" value="Send" />
+
+        </form>
+
+        <div class="clear"></div>
+

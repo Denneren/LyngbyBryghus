@@ -1,0 +1,19 @@
+﻿body {
+    background-image: url('giphy (1).gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+audio {
+    display: none;
+}

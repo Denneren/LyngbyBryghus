@@ -1,0 +1,88 @@
+﻿body {
+    background-color: papayawhip;
+    /*background-image: url('../Img/icon_math_1.gif');*/
+    background-image: url('../Img/black-math.gif');
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.logo {
+    display: block;
+}
+
+.linkpic {
+    width: 100px;
+    height: 100px;
+}
+
+.linkbox {
+    width: 130px;
+    height: 130px;
+}
+
+.imgcenter {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.tekst {
+    display: inline-block;
+}
+
+.box {
+    /*padding-left: 550px;
+}*/
+    text-align: center;
+}
+
+.linkpic1 {
+    width: 120px;
+    height: 120px;
+}
+
+.imgcenter1 {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.linkdeco {
+}
+
+.background {
+    background-color: black;
+}
+
+.borderbox {
+    border: solid 1px red;
+}
+
+@media screen and (max-width: 699px) and (min-width: 220px) {
+    .storskærm {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1920px) and (min-width: 700px) {
+    .mobil {
+        display: none;
+    }
+}
+
+.centerimg {
+    margin: 0 auto;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.inner {
+    display: inline-block;
+    position: center;
+}
+
+audio {
+    display: none;
+}

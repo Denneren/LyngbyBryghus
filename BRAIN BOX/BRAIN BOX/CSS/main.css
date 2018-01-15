@@ -1,0 +1,27 @@
+﻿body {
+    background-color: darkolivegreen;
+    color: hotpink;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.lines {
+    border: solid,1px,red;
+}
+
+.textsize {
+    font-size: 40px;
+}
+
+
+
+.push {
+    margin: 0 50px 0 50px;
+}
+
+.imgcenter {
+    display: block;
+    margin: 0 auto;
+}

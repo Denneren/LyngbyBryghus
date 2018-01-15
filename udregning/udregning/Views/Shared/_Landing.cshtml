@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="~/Img/logo.png" class="img-responsive" style="padding-right:20px; " />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="/Home/KegleRumfang/">
+                    <img src="~/Img/kegle.png" class="img-responsive linkpic" style=" margin-top :20px; margin-left:150px;" />
+                </a>
+                <p class="tekst" style="padding-left:180px; margin-top:20px;">Kegle</p>
+                <a href="/Home/CylinderRumfang/">
+                    <img src="~/Img/cylinder.png" class="img-responsive linkpic" style=" margin-top:20px; margin-left:150px;" />
+                </a>
+                <p class="tekst" style="padding-left:175px; margin-top:20px;">Cylinder</p>
+                <a href="/Home/UdregnKugleoverflade/">
+                    <img src="~/Img/kugle1.png" class="img-responsive linkpic" style=" margin-top:20px; margin-left:150px;" />
+                </a>
+                @*<p class="tekst" style="padding-left:180px; margin-top:20px;">Kugle</p>*@
+
+            </div>
+            <div class="col-sm-6">
+
+                <img src="~/Img/brain.gif" style=" padding-top:30px;margin-left:15px;" />
+                <a href="/Home/Parallelogram/">
+                    <img src="~/Img/Parallelogram.png" class="img-responsive linkpic imgcenter" style="margin-left:15px;" />
+                </a>
+
+                <a href="/Home/Trapez/">
+                    <img src="~/Img/trapez.png" class="img-responsive linkpic imgcenter" style="margin-left:30px;" />
+                </a>
+                <a href="/Home/Kasse/">
+                    <img src="~/Img/kasse3.png" class="img-responsive linkbox imgcenter" style="margin-left:30px; " />
+                </a>
+                <a href="/Home/TrekantAreal/">
+                    <img src="~/Img/trekant.png" class="img-responsive linkpic imgcenter" />
+                </a>
+            </div>
+            <div classs="col-sm-3">
+                <a href="/Home/PrismerRumfang/">
+                    <img src="~/Img/prisme.png" class="img-responsive linkpic" style=" margin-top :30px; margin-right:150px;" />
+                </a>
+                <p class="tekst" style="padding-left:20px;margin-top:20px;">Prisme</p>
+                <a href="/Home/PyramideRumfang/">
+                    <img src="~/Img/pyramide.png" class="img-responsive linkpic" style=" margin-top :25px; margin-left:150px;" />
+                </a>
+                <p class="tekst" style="padding-left:20px;margin-top:20px;">Pyramide</p>
+                <a href="/Home/Cirkel/">
+                    <img src="~/Img/cirkel.png" class="img-responsive linkpic" style=" margin-top :20px; " />
+                </a>
+                @*<p class="tekst" style="margin-top:10px; padding-left:30px;">Cirkel</p>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <p class="tekst" style="margin-left:390px;">Kugle</p>
+        <p class="tekst" style="margin-left:80px;">Parallelogram</p>
+        <p class="tekst" style="margin-left:75px;">Trapez</p>
+        <p class="tekst" style="margin-left:100px;">Kasse</p>
+        <p class="tekst" style="margin-left:90px;">Trekant</p>
+        <p class="tekst" style="margin-left:95px;">Cirkel</p>
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

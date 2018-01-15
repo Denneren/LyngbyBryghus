@@ -1,0 +1,19 @@
+﻿@using Repository.Models
+@model List<Hp>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (Hp hest in Model)
+    {
+        <li>
+            @hest.HpName
+        </li>
+    }
+
+</ul>
+

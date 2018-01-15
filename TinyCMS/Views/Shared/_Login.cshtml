@@ -1,0 +1,12 @@
+﻿@if (Session["id"] == null)
+{
+    <a href="/Login/">Login</a>
+}
+else
+{
+    <a href="/Login/Logout">Logout</a>
+    <br />
+    <text>UserID :</text> @Session["id"]
+    <br />
+    <text>Role :</text> @Session["role"]
+}
